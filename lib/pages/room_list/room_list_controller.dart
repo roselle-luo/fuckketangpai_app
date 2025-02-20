@@ -8,7 +8,7 @@ class RoomListController extends GetxController {
 
   Future initRoom() async {
     try {
-      final courseInfo = await GetCourseInfo.get().getCourses(semester: '2024-2025', term: '1');
+      final courseInfo = await GetCourseInfo.get().getCourses(semester: '2024-2025', term: '2');
       final onlineCourseResponse = await GetCourseInfo.get().getOnlineCourses();
       courses.clear();
       courses.addAll(courseInfo.data);
